@@ -1,0 +1,23 @@
+{
+    "hello" : "Hello world",
+    
+    "about" : "About",
+    
+    "about_desc" : "LangJS is a JS micro lib to support multi language for apps in a single code base",
+    
+    "how" : "How to use",
+    
+    "how_desc" : "The usage is simple and can be made in a few steps",
+    
+    "step1" : "Include the JSlib into your HTML file",
+    
+    "step2" : "Define the fileds that are language based. To do this just add a parameter called '<i>lang-js</i>' to the HTMl tag. Add a key as the value of the parameter. In this case this will be hello (lang-js = 'hello')",
+    
+    "step3" : "Create a language file. The name of the file have to be exactly like the langCode. <br>Exp: English = en.json, German = de.json etc...<br>Add the key of the parameter into the json file and give it a value <i> {'hello' : 'Hello world'}</i>",
+    
+    "step4" : "Define where all your lang files are stored. In my case this is the folder 'lang' one directory above the index.html. Add this line to the bottom of your page <i>LangJS.setUrl('../lang');</i>",
+    
+    "step5" : "Finally we're ready to launch LangJS with <i>LangJS.init();</i>",
+    
+    "more" : "More"
+}

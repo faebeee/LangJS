@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="../src/Lang.js"></script>
+        <link href="../style/style.css" rel="stylesheet"/>
+        <link href="http://fonts.googleapis.com/css?family=Cabin:400,500,400italic,500italic,700,700italic" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>
+                    <span lang-js = "hello"></span>
+                </h1>
+                
+            </div>
+            <div class="content">
+                <h2 lang-js = "about"></h2>
+                <div lang-js = "about_desc"></div>
+                
+                <h2 lang-js="how"></h2>
+                <div>
+                    <span lang-js = "how_desc"></span>
+                    <ul class="steps">
+                        <li lang-js="step1"></li>
+                        <li lang-js="step2"></li>
+                        <li lang-js="step3"></li>
+                        <li lang-js="step4"></li>
+                        <li lang-js="step5"></li>
+                    </ul>                
+                </div>
+                
+                <h2 lang-js="more"></h2>
+                <div>
+                    <a href="https://github.com/faebeee/LangJS">GitHub</a><br>
+                    <a href="http://www.owesome.ch">Team Owesome</a>
+                </div>
+            </div>
+            <div class="footer">
+                <img src="http://www.owesome.ch/wp-content/themes/owesome/res/img/logo_test.png"><br>
+                
+                &copy; <a href="http://owesome.ch">Team Owesome</a><br>
+            </div>
+        </div>
+        
+        
+        <script>
+            LangJS.setUrl("../lang");
+            LangJS.init();
+        </script>
+    </body>
+</html>
