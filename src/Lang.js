@@ -25,8 +25,12 @@ LangJS.setDebug = function( d ){
 LangJS.setFallbackLanguage = function( fallback){
     LangJS.Config.fallbackLang = fallback; 
 }
-LangJS.init = function(){
+LangJS.init = function(langToLoad){
+    
     var lang = navigator.language;
+    if(langToLoad && langToLoad != null)
+        lang = langToLoad;
+    
     LangJS.Core.load(lang.split("-")[0]);
 }
 
